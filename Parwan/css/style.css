@@ -7,7 +7,7 @@ body {
         z-index: 1000;
     }
 
-    .navbar-brand {
+.navbar-brand {
         font-family: 'Vazirmatn';
         font-size: 24px;
         font-weight: bold;
@@ -24,10 +24,11 @@ body {
 
 .form .search {
     border-radius: 50px;
-    padding: 3px 10px;
+    padding: 3px 6px;
     box-shadow: 0px 0px 1px 3px rgb(248, 245, 245);
     outline: none;
     border: none;
+    height: 35px;
 }
 
 .form .search:focus {
@@ -69,32 +70,29 @@ body {
     max-height: 300px;
 }
 */ .section1 {
-    background-image: url('../images/Hero.png');
+    background-image: url('../images/j.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 100vh;
     position: relative;
     color: white;
 
 }
 
-.section1 .overlay {
-    position: absolute;
-    content: "";
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+/* .section1 .overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.3);
+ z-index: 1;
+ /* فیلتر سیاه */
+
 }
 
-.section1 .header img {
-    border-radius: 80%;
-}
-
-.hero-image {
-    position: relative;
-    display: inline-block;
-    /* یا width:100% */
-}
+*/
 
 .hero-image img {
     display: block;
@@ -109,4 +107,54 @@ body {
     /* فیلتر دلخواه */
     border-radius: 15px;
     /* اگر میخوای گوشه گرد باشد مثل عکس */
+}
+.section1 .container-fluid,
+.section1 .header {
+    position: relative;
+    z-index: 2;
+}
+
+.header .row .col {
+    position: relative;
+    left: 100px;
+    top: 100px;
+
+}
+
+.header .row .col h1 {
+    font-family: 'Calisto MT';
+    font-size: 70px;
+}
+
+.header .row .col p {
+    width: 350px;
+}
+
+.header .firstCol {
+    margin-left: 220px;
+    filter: brightness(110%);
+}
+
+.section1 h1 {
+    text-align: center;
+    font-size: 120px;
+    font-family: "Eric ITC";
+    padding: 70px 0px;
+    font-weight: bold;
+}
+
+.section2 {
+    font-family: 'Goudy Old style';
+    color: brown;
+    height: 400px;
+}
+
+.section2 h1 {
+    font-size: 40px;
+    font-family: 'Goudy Old style';
+    color: brown;
+}
+
+.grid {
+    display: flex;
 }
